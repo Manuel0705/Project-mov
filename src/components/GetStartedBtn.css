@@ -1,0 +1,40 @@
+.get-started-btn button {
+	cursor: pointer;
+	padding: 30px 60px;
+	background-color: rgb(244, 22, 67);
+	border-radius: 15px;
+	border: none;
+	color: white;
+	font-size: 24px;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+	transition: 0.5s;
+	position: relative;
+	font-weight: bold;
+}
+
+.get-started-btn button:after {
+	content: "▶";
+	align-content: center;
+	position: absolute;
+	opacity: 0;
+	top: 31px;
+	right: -55px;
+	transition: 0.5s;
+}
+
+.get-started-btn button:hover {
+	padding-right: 70px;
+	padding-left: 40px;
+	font-weight: bolder;
+	font-size: 28px;
+}
+
+.get-started-btn button:hover:after {
+	opacity: 1;
+	right: 30px;
+}
+
+.landing-page .bottom {
+	box-shadow: 0 -3px 8px black;
+}

@@ -1,0 +1,181 @@
+.wrapper {
+	border-radius: 35px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+
+.intro {
+	/* outline: 5px solid rgb(101, 255, 5); */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #821d1d;
+	transition: 0.7s;
+	border-radius: 35px;
+	z-index: 9;
+}
+
+.movie-db-logo {
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 25%;
+}
+
+.logo-header {
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.logo {
+	position: relative;
+	display: inline-block;
+	/* bottom: -120px; */
+	opacity: 0;
+	font-size: 3rem;
+}
+
+.logo.appear {
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+	bottom: 150px;
+	opacity: 0;
+	transition: ease-in-out 0.7s;
+}
+
+/* .movie-db-logo.fade {
+  transition: ease-in-out 0.7s;
+  bottom: 300px;
+  opacity: 0;
+} */
+
+.intro.fade {
+	transition: ease-in-out 2s;
+	transform: translateY(-100vh);
+}
+
+.waviy {
+	position: relative;
+	-webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.waviy .logo {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	margin-top: 40px;
+	font-size: 60px;
+	text-transform: uppercase;
+	animation: waviy 1s infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+.welcome {
+	font-size: 20px;
+}
+
+@keyframes waviy {
+	0%,
+	40%,
+	100% {
+		transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(-20px);
+	}
+}
+
+#container {
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #999;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: bold;
+	padding-top: 200px;
+	position: fixed;
+	width: 100%;
+	bottom: 45%;
+	display: block;
+}
+
+#flip {
+	height: 50px;
+	overflow: hidden;
+}
+
+#flip > div > div {
+	color: #fff;
+	padding-left: 2px;
+	padding-right: 2px;
+	/* padding: 4px 12px; */
+	height: 45px;
+	margin-bottom: 45px;
+	display: inline-block;
+}
+
+#flip div:first-child {
+	animation: show 3s linear;
+}
+
+#flip div div {
+	background: #42c58a;
+}
+
+#flip div:first-child div {
+	background: #4ec7f3;
+}
+
+#flip div:last-child div {
+	background: #dc143c;
+}
+
+@keyframes show {
+	0% {
+		margin-top: -270px;
+	}
+
+	5% {
+		margin-top: -180px;
+	}
+
+	33% {
+		margin-top: -180px;
+	}
+
+	38% {
+		margin-top: -90px;
+	}
+
+	66% {
+		margin-top: -90px;
+	}
+
+	71% {
+		margin-top: 0px;
+	}
+
+	99.99% {
+		margin-top: 0px;
+	}
+
+	100% {
+		margin-top: -270px;
+	}
+}

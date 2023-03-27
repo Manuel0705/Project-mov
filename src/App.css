@@ -1,0 +1,174 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+	font-weight: 100 900;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: Montserrat;
+}
+
+body {
+	font-size: 1.6rem;
+	scroll-behavior: smooth;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(80deg, rgb(234, 3, 234), rgb(0, 213, 255));
+}
+
+.App {
+	position: relative;
+	width: 550px;
+	/* 300px */
+	height: 1050px;
+	/* 575px */
+	background: rgb(255, 255, 255);
+	border-radius: 50px;
+	box-shadow: 0px 0px 0px 5px rgb(188, 188, 188) inset;
+}
+
+/* .iphone::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: rgb(205, 205, 205);
+  border-radius: 48px;
+} */
+
+.inner {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	inset: 3px;
+	background-size: cover !important;
+	background-position: center !important;
+	border-radius: 48px;
+	border: 10px solid #000;
+	transition: 0.5s;
+
+	/* overflow: hidden; */
+}
+
+.btn {
+	position: absolute;
+	top: 110px;
+	left: -17px;
+	width: 5px;
+	height: 36px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	z-index: 10;
+	background: radial-gradient(#ccc, #555, #222);
+}
+
+.btn2 {
+	top: 160px;
+	height: 60px;
+}
+
+.btn3 {
+	top: 240px;
+	height: 60px;
+}
+
+.rightButton {
+	position: absolute;
+	top: 170px;
+	right: -17px;
+	width: 5px;
+	height: 40px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	background: radial-gradient(#ccc, #555, #222);
+	z-index: 10;
+}
+
+.dynamic-island {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 10px;
+	width: 150px;
+	height: 30px;
+	background: #000;
+	border-radius: 20px;
+	z-index: 10;
+	transition: 0.5s ease-in-out;
+}
+
+.dynamic-island:hover {
+	width: 250px;
+	height: 30px;
+}
+
+.operator-name {
+	position: absolute;
+	top: 16px;
+	left: 30px;
+	font-size: 1.6rem;
+	color: rgb(0, 0, 0);
+	z-index: 10;
+	/* text-shadow: 2px 2px 3px rgb(0, 0, 0), -2px -2px 3px, 2px -2px 3px,
+		-2px 2px 3px; */
+}
+
+.dynamic-island-camera {
+	color: white;
+	position: absolute;
+	top: 20px;
+	right: 200px;
+	background: #121212;
+	box-shadow: 0 0 1px grey;
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	z-index: 10;
+	transition: all 0.5s;
+}
+
+.operator-icons {
+	position: absolute;
+	top: 16px;
+	right: 70px;
+	font-size: 14px;
+	transition: all 0.2s;
+	color: rgb(0, 0, 0);
+	z-index: 10;
+}
+
+.battery {
+	width: 30px;
+	height: 15px;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	font-size: 10px;
+	text-align: center;
+	color: black;
+	background: #fffff0;
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	right: -33px;
+	margin-right: -1rem;
+	z-index: 10;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.hiddden {
+	display: none;
+}

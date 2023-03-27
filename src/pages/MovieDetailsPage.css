@@ -1,0 +1,54 @@
+.movie-details {
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	border-radius: 37px 37px 0 0;
+	height: 60%;
+	width: 550px;
+}
+
+.movie-details .details-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 85%;
+	padding-bottom: 15%;
+	border-radius: 0 0 35px 35px;
+	background: linear-gradient(
+		180deg,
+		rgba(2, 0, 36, 0) 20%,
+		rgba(255, 255, 255, 1) 56%
+	);
+}
+
+.movie-details .genres-div,
+.languages-div {
+	display: flex;
+	gap: 10px;
+}
+
+.movie-details .date-runtime {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.movie-details .details-data-wrapper {
+	width: 90%;
+	margin: 10px auto;
+}
+
+.movie-details span {
+	margin-right: 10px;
+}
+
+.movie-details .rating {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.movie-details .description {
+	margin-bottom: 10px;
+}
